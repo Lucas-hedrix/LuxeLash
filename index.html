@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeLash & Nail | Luxury Beauty Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">LuxeLash & Nail</a>
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book Now</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Elevate Your Beauty with Luxury Lashes & Nails</h1>
+                <p>Experience premium beauty services tailored to enhance your natural features and bring out your confidence.</p>
+                <div class="hero-buttons">
+                    <a href="#booking" class="btn">Book Appointment</a>
+                    <a href="#services" class="btn btn-secondary">View Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-img">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>cutomized Classic Lashes</h3>
+                        <p>Natural-looking lash extensions that enhance your eyes with a subtle, elegant look.</p>
+                        <div class="price">From 13k</div>
+                        <a href="#booking" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-img">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Volume Set</h3>
+                        <p>Full, dramatic lash extensions for a bold, glamorous look that makes a statement.</p>
+                        <div class="price">From 25k</div>
+                        <a href="#booking" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-img">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Hybrid set Lashes</h3>
+                        <p>The perfect blend of classic and volume lashes for a textured, multidimensional effect.</p>
+                        <div class="price">From 18k</div>
+                        <a href="#booking" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-img">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Gel Manicure</h3>
+                        <p>Long-lasting gel polish that provides a flawless finish for up to three weeks.</p>
+                        <div class="price">From 8k (short)</div>
+                        <a href="#booking" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-img">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Acrylic nails </h3>
+                        <p>Custom nail extensions crafted to your desired shape and length for the perfect look.</p>
+                        <div class="price">short: 15k</div>
+                        <a href="#booking" class="btn">Book Now</a>
+                    </div>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-img">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Nail Art Design</h3>
+                        <p>Creative and intricate nail art designs to express your unique style and personality.</p>
+                        <div class="price"></div>
+                        <a href="#booking" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Appointment</h2>
+            <div class="booking-container">
+                <div class="booking-info fade-in">
+                    <h3>Ready to Enhance Your Beauty?</h3>
+                    <p>Schedule your appointment with our expert beauty technicians. We offer flexible timing to accommodate your busy schedule.</p>
+                    <p>Please book at least 24 hours in advance to secure your preferred time slot.</p>
+                    <p>For urgent appointments, please call us directly.</p>
+                </div>
+                <div class="booking-form fade-in">
+                    <h3>Book Now</h3>
+                    <form id="appointment-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Select Service</label>
+                            <select id="service" class="form-control" required>
+                                <option value="">Choose a service</option>
+                                <option value="classic-lashes">Classic Lashes</option>
+                                <option value="volume-lashes">Volume Lashes</option>
+                                <option value="hybrid-lashes">Hybrid Lashes</option>
+                                <option value="gel-manicure">Gel Manicure</option>
+                                <option value="nail-extensions">Nail Extensions</option>
+                                <option value="nail-art">Nail Art Design</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <select id="time" class="form-control" required>
+                                <option value="">Choose a time</option>
+                                <option value="9:00 AM">9:00 AM</option>
+                                <option value="10:30 AM">10:30 AM</option>
+                                <option value="12:00 PM">12:00 PM</option>
+                                <option value="1:30 PM">1:30 PM</option>
+                                <option value="3:00 PM">3:00 PM</option>
+                                <option value="4:30 PM">4:30 PM</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Section -->
+    <section id="training" class="training">
+        <div class="container">
+            <h2 class="section-title">Beauty Training Program</h2>
+            <div class="training-container">
+                <div class="training-info fade-in">
+                    <h3>Become a Certified Lash & Nail Technician</h3>
+                    <p>Our comprehensive training program teaches you the art and science of luxury lash and nail services. Whether you're starting a new career or expanding your skills, our expert-led courses provide everything you need to succeed.</p>
+                    
+                    <h4>Program Benefits</h4>
+                    <ul class="benefits-list">
+                        <li>Hands-on training with experienced instructors</li>
+                        <li>Small class sizes for personalized attention</li>
+                        <li>Industry-recognized certification upon completion</li>
+                        <li>Business and marketing guidance to launch your career</li>
+                        <li>Ongoing support and advanced training opportunities</li>
+                        <li>Flexible learning options: in-person or online</li>
+                    </ul>
+                    
+                    <a href="#training-form" class="btn">Enroll Now</a>
+                </div>
+                
+                <div class="testimonials fade-in">
+                    <h4>What Our Students Say</h4>
+                    <div class="testimonial-grid">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"The training program exceeded my expectations. I now run my own successful lash business from home!"</p>
+                            <p class="testimonial-author">- Jessica Miller</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"The instructors were incredibly knowledgeable and supportive. I felt fully prepared to start seeing clients right after certification."</p>
+                            <p class="testimonial-author">- Amanda Roberts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="training-form-container fade-in" id="training-form">
+                <h3 class="section-title">Enroll in Our Training Program</h3>
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="training-name">Full Name</label>
+                        <input type="text" id="training-name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="training-email">Email Address</label>
+                        <input type="email" id="training-email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="training-phone">Phone Number</label>
+                        <input type="tel" id="training-phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="program">Select Program</label>
+                        <select id="program" class="form-control" required>
+                            <option value="">Choose a program</option>
+                            <option value="lash-technician">Lash Technician Certification</option>
+                            <option value="nail-technician">Nail Technician Certification</option>
+                            <option value="combo">Combined Lash & Nail Program</option>
+                            <option value="advanced">Advanced Techniques Workshop</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="format">Preferred Format</label>
+                        <select id="format" class="form-control" required>
+                            <option value="">Choose a format</option>
+                            <option value="in-person">In-Person Training</option>
+                            <option value="online">Online Training</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" class="form-control" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit Enrollment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <h3>Visit Our Studio</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>s-238 2nd floor yaba tejuosho phase 2<br>Lagos,Nigeria</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Monday-Friday: 9am - 7pm<br>Saturday: 10am - 5pm<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+234-907-687-9308</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in">
+                    <h3>Send Us a Message</h3>
+                    <form class="booking-form">
+                        <div class="form-group">
+                            <label for="contact-name">Full Name</label>
+                            <input type="text" id="contact-name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input type="text" id="contact-subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container fade-in">
+                <!-- In a real implementation, this would be an embedded Google Map -->
+                <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:#c2b2e2;color:white;">
+                    <i class="fas fa-map-marked-alt" style="font-size: 2rem; margin-right: 10px;"></i>
+                    <span>Interactive Map Would Appear Here</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h4>Lash&NailBar_ng</h4>
+                    <p>Providing luxury lash and nail services with expertise and care. Enhancing your natural beauty one client at a time.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Lash Extensions</a></li>
+                        <li><a href="#services">Nail Services</a></li>
+                        <li><a href="#services">Gel Manicure</a></li>
+                        <li><a href="#services">Nail Art Design</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><a href="#training">Training</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Subscribe</h4>
+                    <p>Subscribe to our newsletter for special offers and updates.</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 LuxeLash & Nail. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
